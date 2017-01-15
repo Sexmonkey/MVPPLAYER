@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs xmlns:android="http://schemas.android.com/apk/res/android">
+        <tab
+            icon="@mipmap/ic_bottom_home_icon"
+            id="@+id/tab_home"
+            title="首页"
+            barColorWhenSelected="@color/colorPrimary"
+            />
+        <tab
+            icon="@mipmap/ic_bottom_mv_unselect"
+            id="@+id/tab_mv"
+            title="MV"
+            barColorWhenSelected="@color/colorPrimary"
+            />
+        <tab
+            icon="@mipmap/ic_bottom_vlist_unselect"
+            id="@+id/tab_Vbang"
+            title="V榜"
+            barColorWhenSelected="@color/colorPrimary"
+            />
+        <tab
+            icon="@mipmap/ic_bottom_mvlist_unselect"
+            id="@+id/tab_yuedan"
+            title="悦单"
+            barColorWhenSelected="@color/colorPrimary"
+            />
+</tabs>

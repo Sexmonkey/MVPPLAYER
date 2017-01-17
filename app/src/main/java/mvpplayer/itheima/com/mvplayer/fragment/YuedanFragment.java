@@ -1,14 +1,28 @@
 package mvpplayer.itheima.com.mvplayer.fragment;
 
-import mvpplayer.itheima.com.mvplayer.R;
-import mvpplayer.itheima.com.mvplayer.base.BaseFragment;
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+
+import mvpplayer.itheima.com.mvplayer.adapter.YueDanListAdapter;
+import mvpplayer.itheima.com.mvplayer.base.BaseListFragment;
+import mvpplayer.itheima.com.mvplayer.presenter.BaseListPresenter;
+import mvpplayer.itheima.com.mvplayer.presenter.impl.YueDanPresenterImpl;
+import mvpplayer.itheima.com.mvplayer.view.BaseListView;
 
 /**
  * Created by rebort on 2017/1/15.
  */
-public class YuedanFragment extends BaseFragment {
+public class YuedanFragment extends BaseListFragment  {
+private BaseListPresenter baseListPresenter;
+    private static final String TAG = "YuedanFragment";
     @Override
-    public int setLayoutInflater() {
-        return R.layout.fragment_yuedan;
+    public BaseListPresenter getPresenter(BaseListView baseListView) {
+        Log.d(TAG,"YuedanFragment");
+        baseListPresenter=new YueDanPresenterImpl(baseListView);
+        return baseListPresenter;
+    }
+    @Override
+    public RecyclerView.Adapter getAdapter() {
+        return new YueDanListAdapter(getContext(),baseListPresenter.getDataList());
     }
 }

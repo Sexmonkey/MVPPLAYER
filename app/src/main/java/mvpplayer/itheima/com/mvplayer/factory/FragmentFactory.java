@@ -18,10 +18,7 @@ public class FragmentFactory {
    private         Fragment        mVbangFragment;
    private         Fragment        mYuedanFragment;
     private static FragmentFactory mFragmentFactory;
-
-    private FragmentFactory() {
-    }
-
+    private FragmentFactory() {}
     public static FragmentFactory getInstance() {
         if (mFragmentFactory == null) {
             synchronized (FragmentFactory.class) {

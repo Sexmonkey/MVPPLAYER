@@ -13,10 +13,6 @@
         android:src="@mipmap/empty_logo"/>
 
     <!-- 半透明的遮罩-->
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/transparent_layer"/>
 
     <ImageView
         android:id="@+id/home_page_video_icon"
@@ -35,6 +31,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/item_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="标题"
@@ -42,6 +39,7 @@
             android:textSize="22sp"/>
 
         <TextView
+            android:id="@+id/item_desc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -50,5 +48,13 @@
             android:textSize="18sp"/>
 
     </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_layer"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view"/>
 
 </RelativeLayout>

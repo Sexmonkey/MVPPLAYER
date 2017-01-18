@@ -14,10 +14,8 @@ import mvpplayer.itheima.com.mvplayer.view.BaseListView;
  */
 public class YuedanFragment extends BaseListFragment  {
 private BaseListPresenter baseListPresenter;
-    private static final String TAG = "YuedanFragment";
     @Override
     public BaseListPresenter getPresenter(BaseListView baseListView) {
-        Log.d(TAG,"YuedanFragment");
         baseListPresenter=new YueDanPresenterImpl(baseListView);
         return baseListPresenter;
     }

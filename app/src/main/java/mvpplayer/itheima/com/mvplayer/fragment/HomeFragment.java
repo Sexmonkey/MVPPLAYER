@@ -13,7 +13,6 @@ import mvpplayer.itheima.com.mvplayer.view.BaseListView;
  */
 public class HomeFragment extends BaseListFragment{
     private BaseListPresenter mHomePresenter;
-    private static final String TAG = "HomeFragment";
     @Override
     public BaseListPresenter getPresenter(BaseListView baseListView) {
          mHomePresenter = new HomePresenterImpl(baseListView);

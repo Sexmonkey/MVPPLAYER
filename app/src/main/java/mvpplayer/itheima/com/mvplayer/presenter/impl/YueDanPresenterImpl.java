@@ -48,10 +48,10 @@ public class YueDanPresenterImpl implements BaseListPresenter<YueDanListItemBean
     }
 
     @Override
-    public List<YueDanListItemBean.PlayListsBean> getDataList() {
+    public List<YueDanListItemBean.PlayListsBean> getDataList()
+    {
         return mYueDanlist;
     }
-
     private void initData(int offset) {
         String url = URLProviderUtil.getYueDanUrl(offset, 20);
         OkHttpUtils.get().url(url).build().execute(new StringCallback() {

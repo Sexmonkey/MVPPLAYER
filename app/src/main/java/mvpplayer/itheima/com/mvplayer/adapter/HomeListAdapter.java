@@ -17,7 +17,6 @@ import mvpplayer.itheima.com.mvplayer.widget.HomeListItemVIew;
 public class HomeListAdapter extends RecyclerView.Adapter {
     private Context                mContext;
     private List<HomeListItemBean> mHomeList;
-    private static final String TAG = "HomeListAdapter";
     private HomeListItemBean mHomeListItemBean;
 
     public HomeListAdapter(Context context, List<HomeListItemBean> mHomeList) {

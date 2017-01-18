@@ -24,7 +24,6 @@ public class HomePresenterImpl implements BaseListPresenter<HomeListItemBean>{
     private Gson                   mGson;
     private BaseListView       mHomeView;
     private static final String TAG = "HomePresenterImpl";
-
     public HomePresenterImpl(BaseListView homeView) {
         mHomeView = homeView;
         mHomeList = new ArrayList<HomeListItemBean>();
